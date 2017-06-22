@@ -26,9 +26,7 @@ body {
   border-radius: 50%;
 }
 
-ul {
-  margin: 2.0rem 0;
-}
+ul { margin: 3.0rem 0; }
 
 /* Clears bullet points and places <li> items next to each other instead of stacked on top and changes font */
 li {
@@ -52,9 +50,7 @@ a:hover {
 }
 
 /* Style our header tags */
-h1, h2 {
-  font-weight: 700;
-}
+h1, h2 { font-weight: 700; }
 
 h1 {
   font-size: 3.2rem;
@@ -69,11 +65,15 @@ h2 {
 /* Adds some space around our bio */
 p {
   padding: 2.0rem 0;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
-p a, p a:visited {
-  font-size: inherit;
+.divider { margin: 3.0rem 0; }
+.divider::before {
+  content: "/*------------------------------------------------------------*/";
+  color: #3CBC5E;
+  font-size: 1.8rem;
+  font-family: 'Menlo', monospace;
 }
 
 /* Style our 'available' and 'unavailable' classes */
@@ -90,15 +90,56 @@ p a, p a:visited {
   background-color: #3CBC5E;
 }
 
-.available a, .available a:visited {
-  color: #013C20;
-}
-
-.available a:hover {
-  color: #245256;
+a:hover .available {
+  color: #8485ce;
+  background-color: #287C3E;
 }
 
 .unavailable {
   color: #999;
   background-color: #20222B;
 }
+
+/* Resume styles */
+.resume {
+  padding: 0 0 0 3.0rem;
+  text-align: left;
+}
+
+.resume h2 { margin: 4.0rem 0 1.0rem; }
+
+.resume ul { margin: 1.0rem 0 2.0rem; }
+
+.resume li::before { content: "• "; }
+
+.resume li {
+  display: block;
+  padding: 0 1.0rem;
+  text-indent: -0.7rem;
+  font-family: inherit;
+  font-size: 1.4rem;
+  margin: 1.0rem 0 0.3rem;
+  font-weight: 600;
+}
+
+.resume p {
+  padding: 0 0 0 2.0rem;
+  margin: 0 0 2.0rem;
+  font-size: 1.4rem;
+}
+
+.resume a { font-size: inherit; }
+
+.resume .year { margin: 0 0 0.6rem; }
+
+.resume .skills li, .resume .interests li {
+  font-weight: normal;
+  margin: 0.3rem 0;
+}
+
+footer {
+  margin: 3.0rem 0 0;
+  font-size: 1.2rem;
+}
+
+footer a { font-size: inherit; }
