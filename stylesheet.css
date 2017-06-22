@@ -1,0 +1,104 @@
+/* Resets */
+html, body, ul, li, h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+html { font-size: 62.5%; }
+
+/* Declares font family, text colour and adds a subtle pattern to the background */
+body {
+  font-family: -apple-system, 'Helvetica', 'Arial', sans-serif;
+  color: #fff;
+  background-color: #292B35;
+}
+
+/* Make container centered in page and center text inside <div> */
+.container {
+  max-width: 80%;
+  margin: 5% auto;
+  text-align: center;
+}
+
+/* Makes image a circle and sizes it to 40% of the outside container */
+.container img { 
+  max-width: 25%;
+  border-radius: 50%;
+}
+
+ul {
+  margin: 2.0rem 0;
+}
+
+/* Clears bullet points and places <li> items next to each other instead of stacked on top and changes font */
+li {
+  display: inline;
+  list-style: none;
+  padding: 0 0.6rem;
+  font-family: monospace;
+}
+
+/* Remove default hyperlink styling, add our own colours and change font-size*/
+a, a:visited {
+  color: #00aba5;
+  font-size: 2.0rem;
+  text-decoration: none;
+}
+
+/* This changes the link colour when someone hovers their mouse over it */
+a:hover {
+  color: #8485ce;
+  text-decoration: underline;
+}
+
+/* Style our header tags */
+h1, h2 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 3.2rem;
+  margin: 1.0rem 0 0;
+}
+
+h2 {
+  font-size: 2.0rem;
+  color: #D88E62;
+}
+
+/* Adds some space around our bio */
+p {
+  padding: 2.0rem 0;
+  font-size: 1.8rem;
+}
+
+p a, p a:visited {
+  font-size: inherit;
+}
+
+/* Style our 'available' and 'unavailable' classes */
+.available, .unavailable {
+  width: 45%;
+  margin: 1.0rem auto;
+  border-radius: 0.3rem;
+  padding: 1.6rem 0.8rem;
+  font-size: 1.8rem;
+}
+
+.available {
+  color: #fff;
+  background-color: #3CBC5E;
+}
+
+.available a, .available a:visited {
+  color: #013C20;
+}
+
+.available a:hover {
+  color: #245256;
+}
+
+.unavailable {
+  color: #999;
+  background-color: #20222B;
+}
