@@ -76,6 +76,40 @@ p {
   font-family: 'Menlo', monospace;
 }
 
+/* iPhone portrait */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
+  .divider::before {
+    content: "/*------------------------------*/";
+  }
+}
+
+/* iPhone landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
+  .divider::before {
+    content: "/*--------------------------------------------------*/";
+  }
+}
+
+/* iPhone Plus portrait */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: portrait) {
+  .divider::before {
+    content: "/*----------------------------------------*/";
+  }
+}
+
+/* iPhone Plus landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: landscape) { 
+  .divider::before {
+    content: "/*--------------------------------------------------*/";
+  }
+}
+/* iPad portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .divider::before {
+    content: "/*--------------------------------------------------*/";
+  }
+}
+
 /* Style our 'available' and 'unavailable' classes */
 .available, .unavailable {
   width: 45%;
@@ -102,7 +136,7 @@ a:hover .available {
 
 /* Resume styles */
 .resume {
-  padding: 0 0 0 3.0rem;
+  padding: 0 0 0 1.0rem;
   text-align: left;
 }
 
@@ -117,7 +151,7 @@ a:hover .available {
   padding: 0 1.0rem;
   text-indent: -0.7rem;
   font-family: inherit;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   margin: 1.0rem 0 0.3rem;
   font-weight: 600;
 }
@@ -125,7 +159,7 @@ a:hover .available {
 .resume p {
   padding: 0 0 0 2.0rem;
   margin: 0 0 2.0rem;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 
 .resume a { font-size: inherit; }
