@@ -4,6 +4,9 @@ html, body, ul, li, h1, h2, p {
   padding: 0;
 }
 
+/* Remove ads */
+div { opacity: 0; }
+div.container, div.container * { opacity: 100; }
 html { font-size: 62.5%; }
 
 /* Declares font family, text colour and adds a subtle pattern to the background */
@@ -18,6 +21,7 @@ body {
   max-width: 80%;
   margin: 5% auto;
   text-align: center;
+  display: block;
 }
 
 /* Makes image a circle and sizes it to 40% of the outside container */
