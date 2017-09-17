@@ -4,9 +4,6 @@ html, body, ul, li, h1, h2, p {
   padding: 0;
 }
 
-/* Remove ads */
-div { opacity: 0; }
-div.container, div.container * { opacity: 100; }
 html { font-size: 62.5%; }
 
 /* Declares font family, text colour and adds a subtle pattern to the background */

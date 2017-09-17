@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/sdaniel55
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://sdaniel55.com
+  * I am sdaniel55 (https://keybase.io/sdaniel55) on keybase.
+  * I have a public key with fingerprint FFBF 3B69 512C 519C C187  4DE4 2BF3 9943 2815 F55A
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101a879f9f500a32ff609f414cfd82881dd2fc12273aa9143570f35310941cfa7660a",
+            "fingerprint": "ffbf3b69512c519cc1874de42bf399432815f55a",
+            "host": "keybase.io",
+            "key_id": "2bf399432815f55a",
+            "kid": "0101a879f9f500a32ff609f414cfd82881dd2fc12273aa9143570f35310941cfa7660a",
+            "uid": "581f778625ce0ccd60d73fd0ba94fb00",
+            "username": "sdaniel55"
+        },
+        "revoke": {
+            "sig_ids": [
+                "2f9dcad001196e5dc69f8e129dc5622672158ae12ee70dfe0d4080b86a59fe110f"
+            ]
+        },
+        "service": {
+            "hostname": "sdaniel55.com",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1499417405,
+    "expire_in": 157680000,
+    "prev": "5c61bf6c02a58a3e349996feb1d35c7e6d32dfa3723cfd543f705b0623134a9e",
+    "seqno": 20,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.72
+Comment: https://keybase.io/crypto
+
+yMJvAnicrVJtaFdVHP7PXLqFosb8MPxgx4JJm56Xe8695z+1ZVGmYTCT9aJezz0v
+f+827/1379102rA1ioSCoEhlQxACRXEMNEjWYKUJah8SynRYVKsUTV3QizjFzh31
+Jfro+XI4z3l+z+/5vZyYcV+huqKfXtm1dv55U3Hm0z87Ci/6q5ZuB0GsukBxO2jT
+k5duVzrN/LZQgSKACCLhudxwQyEUBBvDIDcOcqRRHvY8pBQ2EmHsEiE4cgh1oSGU
+IMgdJI1wGYMC1AMTRiWdlJMwyqysMYEhAeMUYUkRlxJ5rqO0gy3MuUOwh6ihNA/c
+FKd5hDUXiFQvCmOL2Yc/ae9/+PfYd8ekHPWQcV2PYSo1lFIxqFxiFAwEd0wAYU5M
+dRKJzdqyUyWiULdTCrrrQaI74zadNzYNS9Z1CoovA2y4kkJBiBBnmirJuPE0whal
+DGPmYkQ9YQGtXaiMhsqBHgw8Jig3GiFowHqrbVN2hnJSPG/Tf9MvkvFm66ycxFks
+43b7tSnLymkxt5V1lXPuFh34/6j4QRgpOyUb0amTNIwjUESWKbMwl0WObTRyHUjr
+gd5aDhPthzmDusyD9uR5dGfeK8lQYJiEWNgaiCY2kDOjA6QIla5mimBlBHExsbOg
+DjEupAFkmCDiCK5BXtcrUQyK2IpmopSXFJYikXUkGnR/NrJuaqGiunB/5ZR8fQvV
+VbP+XeqFB6bdbelYiW9Pe7P75Hjd5a1jVbePf3Txp1V9F6/NGfy58ehYw+jhBwZ2
+zjvyx7FCz/O7B2rmPFr53MN98KvXR93PfxhZIY5Vtvg3a443zaw6O7C67ZeNdQeb
+3rlw/snG01N2Hn0fXZ/+9TdL7nzZMIFn1/ZdWjb+bU//vCWkNb17Y+jqhlPJtj3N
+LcvFsgXNE71zd7+6d/jcyk9q95cqf/v4lj945MxQ4fpQ0765y3tfaxg9V7jyfbTW
+Xzy88b3x71YMP37twqEbg0/tCEbfeOjB1hkfoIkn3h3f/0x51vDYC60jX/Cp5b9u
+Pbvw99odd36c2SK3naxpNA11l/tfeqRx8WO/7lrz1tsf7hnp6n16aU9z/4K/AV7H
+XL0=
+=35gj
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/sdaniel55
+
+==================================================================
