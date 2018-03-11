@@ -1,0 +1,83 @@
+---
+layout: default
+---
+
+<img src="assets/profile-picture.jpg" alt="Me"/>
+      
+<h1>{{ site.data.me.name }}</h1>
+
+<h2>{{ site.data.me.title }}</h2>
+
+{{ site.data.me.bio | markdownify }}
+
+<a href="mailto:{{ site.data.me.email }}" title='sendEmail(to: "{{ site.data.me.email }}")' target="_blank">
+  <div class="available">Available for hire</div>
+</a>
+
+{% assign links = site.data.links %}
+<ul class="links">
+  {% for link in links %}
+  <li>
+    {{ link.name | markdownify }}
+   </li>
+  {% endfor %}
+</ul>
+
+<div class="divider"></div>
+
+<div class="resume">
+  {% assign experiences = site.data.experiences %}
+  <section class="experience">
+    <h2>Experience</h2>
+    <ul>
+      {% for exp in experiences %}
+      <li>{{ exp.title }}</li>
+      <p class="year"><i>{{ exp.date }}</i></p>
+      <p>{{ exp.description | markdownify }}
+      {% endfor %}
+    </ul>
+  </section>
+
+  {% assign educations = site.data.educations %}
+  <section class="education">
+    <h2>Education</h2>
+    <ul>
+      {% for edu in educations %}
+      <li>{{ edu.title }}</li>
+      <p class="year"><i>{{ edu.date }}</i></p>
+      <p>{{ edu.description | markdownify }}
+      {% endfor %}
+    </ul>
+  </section>
+
+  {% assign skills = site.data.skills %}
+  <section class="skills">
+    <h2>Skills</h2>
+    <ul>
+      {% for skill in skills %}
+      <li>{{ skill.name | markdownify }}</li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  {% assign interests = site.data.interests %}
+  <section class="interests">
+    <h2>Other Interests and Activities</h2>
+    <ul>
+      {% for interest in interests %}
+      <li>{{ interest.name | markdownify }}</li>
+      {% if interest.details %}
+      <ul style="margin-left: 2.0rem; margin-bottom: 0.8rem;">
+        {% for detail in interest.details %}
+        <li>{{ detail | markdownify}}</li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </section>
+</div> <!-- resume -->
+
+<div class="divider"></div>
+
+{% include footer.html %}
