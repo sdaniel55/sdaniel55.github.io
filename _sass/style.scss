@@ -1,3 +1,13 @@
+$bg-color:      #292B35;
+$white:         #ffffff !important;
+$blue:          #00aba5 !important;
+$dark-blue:     #8485ce !important;
+$heading-color: #D88E62 !important;
+$green:         #3CBC5E !important;
+$dark-green:    #287C3E !important;
+$grey:          #999999 !important;
+$black:         #20222B !important;
+
 /* Resets */
 html, body, ul, li, h1, h2, p {
   margin: 0;
@@ -9,8 +19,8 @@ html { font-size: 62.5%; }
 /* Declares font family, text colour and adds a subtle pattern to the background */
 body {
   font-family: -apple-system, 'Helvetica', 'Arial', sans-serif;
-  color: #fff;
-  background-color: #292B35;
+  color: $white;
+  background-color: $bg-color !important;
 }
 
 /* Make container centered in page and center text inside <div> */
@@ -19,6 +29,7 @@ body {
   margin: 5% auto;
   text-align: center;
   display: block;
+  background-color: none;
 }
 
 /* Makes image a circle and sizes it to 40% of the outside container */
@@ -39,14 +50,14 @@ li {
 
 /* Remove default hyperlink styling, add our own colours and change font-size*/
 a, a:visited {
-  color: #00aba5;
-  font-size: 2.0rem;
+  color: $blue;
+  font-size: 1.7rem;
   text-decoration: none;
 }
 
 /* This changes the link colour when someone hovers their mouse over it */
 a:hover {
-  color: #8485ce;
+  color: $dark-blue;
   text-decoration: underline;
 }
 
@@ -60,7 +71,7 @@ h1 {
 
 h2 {
   font-size: 2.0rem;
-  color: #D88E62;
+  color: $heading-color;
 }
 
 /* Adds some space around our bio */
@@ -69,10 +80,16 @@ p {
   font-size: 1.6rem;
 }
 
+.links li p {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
 .divider { margin: 3.0rem 0; }
 .divider::before {
   content: "/*------------------------------------------------------------*/";
-  color: #3CBC5E;
+  color: $green;
   font-size: 1.8rem;
   font-family: 'Menlo', monospace;
 }
@@ -121,18 +138,18 @@ p {
 }
 
 .available {
-  color: #fff;
-  background-color: #3CBC5E;
+  color: $white;
+  background-color: $green;
 }
 
 a:hover .available {
-  color: #8485ce;
-  background-color: #287C3E;
+  color: $dark-blue;
+  background-color: $dark-green;
 }
 
 .unavailable {
-  color: #999;
-  background-color: #20222B;
+  color: $grey;
+  background-color: $black;
 }
 
 /* Resume styles */
@@ -145,7 +162,11 @@ a:hover .available {
 
 .resume ul { margin: 1.0rem 0 2.0rem; }
 
-.resume li::before { content: "• "; }
+.resume li p {
+  padding: 0;
+  margin-bottom: 0.3rem;
+}
+.resume li p::before { content: "• "; }
 
 .resume li {
   display: block;
@@ -165,7 +186,7 @@ a:hover .available {
 
 .resume a { font-size: inherit; }
 
-.resume .year { margin: 0 0 0.6rem; }
+.resume .year { margin: 0 0 -0.6rem 0 !important; }
 
 .resume .skills li, .resume .interests li {
   font-weight: normal;

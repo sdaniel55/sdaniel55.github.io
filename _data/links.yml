@@ -1,0 +1,12 @@
+- name: "[Email](mailto:daniel.spindelbauer@gmail.com)"
+  title: 'sendEmail(to: "daniel.spindelbauer@gmail.com")'
+- name: "[GitHub](https://github.com/sdaniel55)"
+  title: 'openProfile(forWebsite: .github)'
+- name: "[Twitter](https://twitter.com/sdaniel55)"
+  title: 'openProfile(forWebsite: .twitter)'
+- name: "[LinkedIn](https://www.linkedin.com/in/daniel-spindelbauer)"
+  title: 'openProfile(forWebsite: .linkedin)'
+- name: "[StackOverflow](https://stackoverflow.com/users/2859422/dan)"
+  title: 'openProfile(forWebsite: .stackoverflow)'
+- name: "[reddit](https://reddit.com/user/sdaniel55)"
+  title: 'openProfile(forWebsite: .reddit)'
