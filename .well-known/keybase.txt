@@ -1,5 +1,5 @@
 ---
-layout: none
+layout:
 permalink: .well-known/keybase.txt
 ---
 
