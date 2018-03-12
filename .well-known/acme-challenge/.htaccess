@@ -1,4 +1,0 @@
-Satisfy any
-<IfModule mod_rewrite.c>
-    RewriteEngine off
-</IfModule>
