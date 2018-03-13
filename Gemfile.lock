@@ -254,6 +254,7 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  jekyll (~> 3.6.2)
   jekyll-last-modified-at
   minima (~> 2.0)
   tzinfo-data
