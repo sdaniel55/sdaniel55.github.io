@@ -13,12 +13,12 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Daniel Spindelbauer
+title: "Daniel Spindelbauer"
 keywords: "Portfolio,iOS Developer, Software Engineer, hire me, developer, Swift, iOS"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://sdaniel55.com" # the base hostname & protocol for your site, e.g. http://example.com
-username: sdaniel55
-google_analytics: UA-101402448-1
+username: "sdaniel55"
+google_analytics: "UA-101402448-1"
 
 # Build settings
 markdown: kramdown
