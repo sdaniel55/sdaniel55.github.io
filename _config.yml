@@ -23,8 +23,6 @@ google_analytics: "UA-101402448-1"
 # Build settings
 markdown: kramdown
 theme: minima
-plugins:
-  - jekyll-last-modified-at
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
