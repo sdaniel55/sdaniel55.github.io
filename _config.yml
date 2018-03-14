@@ -34,5 +34,4 @@ exclude:
   - vendor
   - bin
 
-include:
-  - .well-known
+include: [.well-known]
