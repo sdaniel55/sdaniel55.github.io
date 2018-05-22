@@ -1,11 +1,11 @@
 $bg-color:      #292b35 !important;
-$white:         #fff !important;
+$white:         #fff    !important;
 $blue:          #00aba5 !important;
 $dark-blue:     #8485ce !important;
 $heading-color: #d88e62 !important;
 $green:         #3cbc5e !important;
 $dark-green:    #287c3e !important;
-$grey:          #999 !important;
+$grey:          #999    !important;
 $black:         #20222b !important;
 
 // Resets
@@ -93,6 +93,8 @@ p {
   margin: 0;
   padding: 0;
 }
+
+.available-link { text-decoration: none; }
 
 // Style our 'available' and 'unavailable' classes
 .available,
