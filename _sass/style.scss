@@ -1,83 +1,91 @@
-$bg-color:      #292B35;
-$white:         #ffffff !important;
+$bg-color:      #292b35 !important;
+$white:         #fff !important;
 $blue:          #00aba5 !important;
 $dark-blue:     #8485ce !important;
-$heading-color: #D88E62 !important;
-$green:         #3CBC5E !important;
-$dark-green:    #287C3E !important;
-$grey:          #999999 !important;
-$black:         #20222B !important;
+$heading-color: #d88e62 !important;
+$green:         #3cbc5e !important;
+$dark-green:    #287c3e !important;
+$grey:          #999 !important;
+$black:         #20222b !important;
 
-/* Resets */
-html, body, ul, li, h1, h2, p {
+// Resets
+html,
+body,
+ul,
+li,
+h1,
+h2,
+p {
   margin: 0;
   padding: 0;
 }
 
 html { font-size: 62.5%; }
 
-/* Declares font family, text colour and adds a subtle pattern to the background */
+// Declares font family, text colour and adds a subtle pattern to the background
 body {
-  font-family: -apple-system, 'Helvetica', 'Arial', sans-serif;
+  background-color: $bg-color;
   color: $white;
-  background-color: $bg-color !important;
+  font-family: -apple-system, 'Helvetica', 'Arial', sans-serif;
 }
 
-/* Make container centered in page and center text inside <div> */
+// Make container centered in page and center text inside <div>
 .container {
-  max-width: 80%;
-  margin: 5% auto;
-  text-align: center;
-  display: block;
   background-color: none;
+  display: block;
+  margin: 5% auto;
+  max-width: 80%;
+  text-align: center;
+
+  // Makes image a circle and sizes it to 40% of the outside container
+  img {
+    border-radius: 50%;
+    max-width: 25%;
+  }
 }
 
-/* Makes image a circle and sizes it to 40% of the outside container */
-.container img { 
-  max-width: 25%;
-  border-radius: 50%;
-}
+ul { margin: 3rem 0; }
 
-ul { margin: 3.0rem 0; }
-
-/* Clears bullet points and places <li> items next to each other instead of stacked on top and changes font */
+// Clears bullet points and places <li> items next to each other instead of stacked on top and changes font
 li {
   display: inline;
-  list-style: none;
-  padding: 0 0.6rem;
   font-family: monospace;
+  list-style: none;
+  padding: 0 .6rem;
 }
 
-/* Remove default hyperlink styling, add our own colours and change font-size*/
-a, a:visited {
+// Remove default hyperlink styling, add our own colours and change font-size
+a,
+a:visited {
   color: $blue;
   font-size: 1.7rem;
-  text-decoration: none;
-}
-
-/* This changes the link colour when someone hovers their mouse over it */
-a:hover {
-  color: $dark-blue;
   text-decoration: underline;
+
+  // This changes the link colour when someone hovers their mouse over it
+  &:hover {
+    color: $dark-blue;
+    text-decoration: underline;
+  }
 }
 
-/* Style our header tags */
-h1, h2 { font-weight: 700; }
+// Style our header tags
+h1,
+h2 { font-weight: 700; }
 
 h1 {
   font-size: 3.2rem;
-  margin: 1.0rem 0 0;
+  margin: 1rem 0 0;
 }
 
 h2 {
-  font-size: 2.0rem;
   color: $heading-color;
+  font-size: 2rem;
 }
 
-/* Adds some space around our bio */
+// Adds some space around our bio
 p {
-  padding: 2.0rem 0;
   font-size: 1.6rem;
+  padding: 2rem 0;
 }
 
 .links li p {
@@ -86,116 +94,135 @@ p {
   padding: 0;
 }
 
-.divider { margin: 3.0rem 0; }
-.divider::before {
-  content: "/*------------------------------------------------------------*/";
-  color: $green;
+// Style our 'available' and 'unavailable' classes
+.available,
+.unavailable {
+  border-radius: .3rem;
   font-size: 1.8rem;
-  font-family: 'Menlo', monospace;
-}
-
-/* iPhone portrait */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
-  .divider::before {
-    content: "/*------------------------------*/";
-  }
-}
-
-/* iPhone landscape */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
-  .divider::before {
-    content: "/*--------------------------------------------------*/";
-  }
-}
-
-/* iPhone Plus portrait */
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: portrait) {
-  .divider::before {
-    content: "/*----------------------------------------*/";
-  }
-}
-
-/* iPhone Plus landscape */
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: landscape) { 
-  .divider::before {
-    content: "/*--------------------------------------------------*/";
-  }
-}
-/* iPad portrait */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-  .divider::before {
-    content: "/*--------------------------------------------------*/";
-  }
-}
-
-/* Style our 'available' and 'unavailable' classes */
-.available, .unavailable {
+  margin: 1rem auto;
+  padding: 1.6rem .8rem;
   width: 45%;
-  margin: 1.0rem auto;
-  border-radius: 0.3rem;
-  padding: 1.6rem 0.8rem;
-  font-size: 1.8rem;
 }
 
 .available {
-  color: $white;
   background-color: $green;
+  color: $white;
 }
 
 a:hover .available {
-  color: $dark-blue;
   background-color: $dark-green;
+  color: $dark-blue;
 }
 
 .unavailable {
-  color: $grey;
   background-color: $black;
+  color: $grey;
 }
 
-/* Resume styles */
+// Resume styles
 .resume {
-  padding: 0 0 0 1.0rem;
+  padding: 0 0 0 1rem;
   text-align: left;
-}
 
-.resume h2 { margin: 4.0rem 0 1.0rem; }
+  h2 { margin: 4rem 0 1rem; }
+  ul { margin: 1rem 0 2rem; }
+  li {
+    display: block;
+    font-family: inherit;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 1rem 0 .3rem;
+    padding: 0 1rem;
+    text-indent: -.7rem;
+    // &::before { content: '• '; }
+  }
 
-.resume ul { margin: 1.0rem 0 2.0rem; }
+  p { // todo
+    font-size: 1.6rem;
+    margin: 0 0 2rem;
+    padding: 0 0 0 2rem;
+  }
 
-.resume li p {
-  padding: 0;
-  margin-bottom: 0.3rem;
-}
-.resume li p::before { content: "• "; }
+  a { font-size: inherit; }
+  .year { margin: 0 0 -.6rem !important; }
 
-.resume li {
-  display: block;
-  padding: 0 1.0rem;
-  text-indent: -0.7rem;
-  font-family: inherit;
-  font-size: 1.6rem;
-  margin: 1.0rem 0 0.3rem;
-  font-weight: 600;
-}
+  .skills li,
+  .interests li {
+    font-weight: normal;
+    margin: .3rem 0;
+  }
 
-.resume p {
-  padding: 0 0 0 2.0rem;
-  margin: 0 0 2.0rem;
-  font-size: 1.6rem;
-}
+  .interests li p {
+    margin: 0;
 
-.resume a { font-size: inherit; }
+    &::before { content: '• '; }
+  }
 
-.resume .year { margin: 0 0 -0.6rem 0 !important; }
+  .skills li {
+    background: $heading-color;
+    border-radius: 4px;
+    display: inline-block;
+    text-indent: 0;
 
-.resume .skills li, .resume .interests li {
-  font-weight: normal;
-  margin: 0.3rem 0;
+    p {
+      margin: 0;
+      padding: .4rem;
+    }
+
+    a {
+      color: $white;
+      &:hover { color: $dark-blue; }
+    }
+  }
 }
 
 footer {
-  margin: 3.0rem 0 0;
   font-size: 1.2rem;
+  margin: 3rem 0 0;
+  a { font-size: inherit; }
 }
 
-footer a { font-size: inherit; }
+.divider {
+  margin: 3rem 0;
+
+  &::before {
+    color: $green;
+    content: '/*------------------------------------------------------------*/';
+    font-family: 'SF Mono', 'Menlo', monospace;
+    font-size: 1.8rem;
+  }
+}
+
+// iPhone portrait
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
+  .divider::before {
+    content: '/*------------------------------*/';
+  }
+}
+
+// iPhone landscape
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
+  .divider::before {
+    content: '/*--------------------------------------------------*/';
+  }
+}
+
+// iPhone Plus portrait
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: portrait) {
+  .divider::before {
+    content: '/*----------------------------------------*/';
+  }
+}
+
+// iPhone Plus landscape
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: landscape) {
+  .divider::before {
+    content: '/*--------------------------------------------------*/';
+  }
+}
+// iPad portrait
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .divider::before {
+    content: '/*--------------------------------------------------*/';
+  }
+}
