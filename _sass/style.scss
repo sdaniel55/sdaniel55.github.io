@@ -58,7 +58,7 @@ li {
 a,
 a:visited {
   color: $blue;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   text-decoration: underline;
 
   // This changes the link colour when someone hovers their mouse over it
@@ -184,12 +184,69 @@ footer {
   a { font-size: inherit; }
 }
 
+
+// BLOG
+
+article {
+  .date {
+    font-size: 1.2rem;
+    padding: .6rem 0;
+  }
+}
+
+.blog {
+  text-align: left !important;
+
+  h1 { font-size: 2.4rem; }
+
+  .links {
+    margin: 1.5rem 0;
+    li {
+      padding-left: 0;
+    }
+  }
+
+  .read-more {
+    font-size: 1.5rem;
+  }
+}
+
+.post {
+  text-align: left !important;
+
+  h1 { font-size: 2.4rem; }
+
+  .links {
+    margin: 1.5rem 0;
+    li {
+      padding-left: 0;
+    }
+  }
+
+  .entry {
+    font-family: 'Garamond', serif;
+  }
+}
+
+
+.divider-short {
+  margin: 3rem 0;
+  text-align: center;
+
+  &::before {
+    color: $green;
+    content: '/* --- */';
+    font-family: 'SF Mono', 'Menlo', monospace;
+    font-size: 1.6rem;
+  }
+}
+
 .divider {
   margin: 3rem 0;
 
   &::before {
     color: $green;
-    content: '/*------------------------------------------------------------*/';
+    content: '/*----------------------------------------------------------*/';
     font-family: 'SF Mono', 'Menlo', monospace;
     font-size: 1.8rem;
   }

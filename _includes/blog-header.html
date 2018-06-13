@@ -1,0 +1,10 @@
+<h1>{{ site.data.me.name }}'s Blog</h1>
+
+<ul class="links">
+  <li><a href="/">Home</a></li>
+  {% if include.url != "/blog" %}
+  <li><a href="{{ site.baseurl }}/blog">Back</a></li>
+  {% endif %}
+</ul>
+
+<div class="divider"></div>

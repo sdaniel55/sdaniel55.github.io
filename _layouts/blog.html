@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+<div class="blog">
+  
+  {% include blog-header.html url=page.url %}
+
+  <div class="posts">
+    {% assign no_posts = true %}
+    {% assign sorted_posts = site.posts | sort:'date' | reverse %}
+    {% for post in sorted_posts %}
+      {% assign no_posts = false %}
+      <article>
+        <h2>
+          <a href="{{ site.baseurl }}{{ post.url }}">
+            {{ post.title }}
+          </a>
+        </h2>
+
+        <p class="date">
+          {{ post.date | date: "%B %-d, %Y" }}
+        </p>
+
+        <div class="entry">
+          {{ post.excerpt }}
+        </div>
+
+        <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+      </article>
+      
+      <div class="divider-short"></div>
+    {% endfor %}
+    {% if no_posts %}
+      <p style="text-align: center;">This seems to be empty.</p>
+      <p style="text-align: center; padding-top: 0;">In the meantime, find me on Twitter <a href="https://twitter.com/sdaniel55">@sdaniel55</a>, or check back later!</p>
+    {% endif %}
+  </div>
+</div>
+
+{% include footer-blog.html %}

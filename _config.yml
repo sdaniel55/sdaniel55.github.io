@@ -23,6 +23,7 @@ google_analytics: "UA-101402448-1"
 # Build settings
 markdown: kramdown
 theme: minima
+permalink: "/:title"
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

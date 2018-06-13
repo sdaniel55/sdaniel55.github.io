@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<div class="post">
+  
+  {% include blog-header.html url=page.url %}
+
+  <article>
+    <h2>{{ page.title }}</h2>
+    <p class="date">
+      Published on {{ page.date | date: "%B %-d, %Y" }}
+    </p>
+    
+    <div class="entry">
+      {{ content }}
+    </div>
+  </article>
+</div>
