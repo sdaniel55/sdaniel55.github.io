@@ -10,9 +10,14 @@ layout: default
 
 {{ site.data.me.bio | markdownify }}
 
-<a href="mailto:{{ site.data.me.email }}" title='sendEmail(to: "{{ site.data.me.email }}")' target="_blank" class="available-link">
-  <div class="available">Available for hire</div>
-</a>
+{% if site.data.me.isAvailable %}
+  <a href="mailto:{{ site.data.me.email }}" title='sendEmail(to: "{{ site.data.me.email }}")' target="_blank" class="available-link">
+    <div class="available">Available for hire</div>
+  </a>
+{% else %}
+  <div class="unavailable">Not available for hire</div>
+{% endif %}
+
 
 {% assign links = site.data.links %}
 <ul class="links">
@@ -31,7 +36,7 @@ layout: default
     <h2>Experience</h2>
     <ul>
       {% for exp in experiences %}
-      <li>{{ exp.title }}</li>
+      <li class="title">{{ exp.title | markdownify }}</li>
       <p class="year"><i>{{ exp.date }}</i></p>
       <p>{{ exp.description | markdownify }}
       {% endfor %}

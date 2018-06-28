@@ -145,6 +145,11 @@ a:hover .available {
     padding: 0 0 0 2rem;
   }
 
+  .experience ul .title p {
+    margin-bottom: .3rem;
+    padding: 0;
+  }
+
   a { font-size: inherit; }
   .year { margin: 0 0 -.6rem !important; }
 
@@ -201,6 +206,7 @@ article {
 
   .links {
     margin: 1.5rem 0;
+
     li {
       padding-left: 0;
     }
@@ -218,6 +224,7 @@ article {
 
   .links {
     margin: 1.5rem 0;
+
     li {
       padding-left: 0;
     }
