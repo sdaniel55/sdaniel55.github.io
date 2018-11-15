@@ -145,13 +145,22 @@ a:hover .available {
     padding: 0 0 0 2rem;
   }
 
-  .experience ul .title p {
-    margin-bottom: .3rem;
-    padding: 0;
+  .experience ul {
+    ul li {
+      font-weight: normal;
+      margin: .3rem 0;
+      margin-left: .6rem;
+
+      &::before { content: '• '; }
+    }
+    .title p {
+      margin-bottom: .3rem;
+      padding: 0;
+    }
   }
 
   a { font-size: inherit; }
-  .year { margin: 0 0 -.6rem !important; }
+  .year { margin: 0 0 -.6rem 0 !important; }
 
   .skills li,
   .interests li {
