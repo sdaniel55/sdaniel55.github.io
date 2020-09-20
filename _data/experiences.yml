@@ -2,7 +2,8 @@
   date: "2019 August - Present"
   description: |
     I have been part of both product and platform teams. I have worked together with product, design, to define features and upcoming streams of work. I was working closely with the Android and backend engineers during development to make sure features align across all platforms. We have used ReactiveSwift, ReactiveFeedback, Bento (Babylon’s UI framework build on UIKit) frameworks for development, and for testing, Nimble, Gherkin, and snapshot testing. Also contributed to our documentation, with articles about our processes, features.
-    *Projects I have worked on*
+
+    **Projects I have worked on**
     - Monitor Programs: I helped develop the next iteration of the Monitor dashboard, where users can set up composite care plans, to monitor their multiple conditions at once.
     - Medication Reminders: Delivered the redesigned medication reminders feature within Monitor. Users can set up reminders manually, or based on their GP’s prescription automatically.
     - COVID-19 Care Plan: Helped to deliver Babylon’s first features in response to the coronavirus pandemic. This set of features allowed users to monitor their symptoms and get help in case they got worse.
