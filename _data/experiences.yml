@@ -1,9 +1,13 @@
 - title: "iOS Engineer - Babylon Health"
   date: "2019 August - Present"
   description: |
-    As part of the Monitor team, we were working on helping users with diabetes. I’ve been involved in setting up modules for the Monitor dashboard, medication and prescription reminders, along with various platform work.
-    After 10 months, I’ve switched to the platform team, where I’m working on tooling and improving our iOS platform and CI setup.
-    Worked with reactive functional Swift, ReactiveFeedback, Bento (Babylon’s OSS UI framework), used Nimble, Gherkin, and snapshot testing. Also contributed to our documentation, with articles about our processes, features.
+    I have been part of both product and platform teams. I have worked together with product, design, to define features and upcoming streams of work. I was working closely with the Android and backend engineers during development to make sure features align across all platforms. We have used ReactiveSwift, ReactiveFeedback, Bento (Babylon’s UI framework build on UIKit) frameworks for development, and for testing, Nimble, Gherkin, and snapshot testing. Also contributed to our documentation, with articles about our processes, features.
+    *Projects I have worked on*
+    - Monitor Programs: I helped develop the next iteration of the Monitor dashboard, where users can set up composite care plans, to monitor their multiple conditions at once.
+    - Medication Reminders: Delivered the redesigned medication reminders feature within Monitor. Users can set up reminders manually, or based on their GP’s prescription automatically.
+    - COVID-19 Care Plan: Helped to deliver Babylon’s first features in response to the coronavirus pandemic. This set of features allowed users to monitor their symptoms and get help in case they got worse.
+    - iOS platform: Since June 2020, I have been maintaining the iOS platform, including all our tooling, bots, and low-level features within the project. I have also worked on platform improvements to reduce our CI costs and build times, and to make development easier for the team.
+    - Assisting releases: I have helped to release our iOS updates regularly, which involved fixing bugs in pre-release builds, verifying test cases, fixing crashes, and automating release steps.
 - title: "iOS Developer - Self-Employed"
   date: "2016 - 2019"
   description: "I have been working part-time on iOS applications with Swift. In September 2016, I have released my first app [LaunchTime](https://itunes.apple.com/us/app/launchtime-rocket-launch-schedule/id1150882739?at=1010lqoC&ct=resume&ls=1&pt=87037734&mt=8), which I have been working on in my spare time. I have also made apps for clients and learning purposes that are not public. I’m also keeping up to date with the latest Apple technologies and frameworks."
