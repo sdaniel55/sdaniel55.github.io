@@ -1,7 +1,13 @@
+- title: "iOS Engineer - [Chip](https://getchip.uk)"
+  date: "2020 December - Present"
+  description: |
+    I have spent my first couple months on improving the projects’s tooling, which involved refactoring the CI configuration to reduce build times and make them more efficient. I have also added release automation that covers majority of the release process. Speaking of, I have helped define and document the release process, so that we can collaborate with other teams and share responsibilities easier. I have also written a Vapor service to generate a changelog for the mobile releases and update Jira with the relevant details.
+    
+    Alongside the platform improvements, I have worked on new features which included the new investment product, updating price plans, and presenting customer’s statements. These works allowed me to earn in-depth knowledge of UIKit and building custom components. I have also led experimentation with SwiftUI and its integration into our production app.
 - title: "iOS Engineer - [Babylon Health](https://babylonhealth.com)"
   date: "2019 August - 2020 December"
   description: |
-    I have been part of both product and platform teams. I have worked together with product, design, to define features and upcoming streams of work. I was working closely with the Android and backend engineers during development to make sure features align across all platforms. We have used ReactiveSwift, ReactiveFeedback, Bento (Babylon’s UI framework build on UIKit) frameworks for development, and for testing, Nimble, Gherkin, and snapshot testing. Also contributed to our documentation, with articles about our processes, features.
+    I have been part of both product and platform teams. I have worked together with product, design, to define features and upcoming streams of work. I was working closely with the Android and backend engineers during development to make sure features align across all platforms. We have used ReactiveSwift, ReactiveFeedback, Bento (Babylon’s UI framework built on UIKit) frameworks for development, and for testing, Nimble, Gherkin, and snapshot testing. Also contributed to our documentation, with articles about our processes, features.
 
     Projects I have worked on:
     - Monitor Programs: I helped develop the next iteration of the Monitor dashboard, where users can set up composite care plans, to monitor their multiple conditions at once.
