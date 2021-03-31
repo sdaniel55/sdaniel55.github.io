@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: "Daniel Spindelbauer"
-keywords: "Portfolio,iOS Developer, Software Engineer, hire me, developer, Swift, iOS"
+keywords: "Portfolio,iOS Developer, Software Engineer, hire me, developer, Swift, iOS, Mobile DevOps"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://sdaniel55.com" # the base hostname & protocol for your site, e.g. http://example.com
 username: "sdaniel55"
